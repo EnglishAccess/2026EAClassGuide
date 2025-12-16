@@ -22,6 +22,8 @@ body {
     background-color: var(--bg-color);
     line-height: 1.6;
     overflow-x: hidden;
+    border-top: 10px solid red;
+    /* Temporary marker for verification */
 }
 
 /* Header */
