@@ -16,14 +16,17 @@
     padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--font-main);
     color: var(--text-color);
     background-color: var(--bg-color);
     line-height: 1.6;
     overflow-x: hidden;
-    border-top: 10px solid red;
-    /* Temporary marker for verification */
+    width: 100%;
 }
 
 /* Header */
@@ -425,6 +428,10 @@ footer p {
     overflow-x: auto;
     margin-top: 30px;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
 }
 
 .comparison-table {
