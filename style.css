@@ -143,8 +143,52 @@ h2 {
 
 .class-card h3 {
     color: var(--secondary-color);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    /* Reduced bottom margin for tags */
     font-size: 1.4rem;
+}
+
+/* Tag Styles */
+.card-tags {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+.tag-preschool {
+    background-color: #FF69B4;
+    /* Hot Pink */
+}
+
+.tag-elementary {
+    background-color: var(--primary-color);
+    /* SeaGreen */
+}
+
+.tag-teens {
+    background-color: var(--secondary-color);
+    /* SteelBlue */
+}
+
+.tag-course {
+    background-color: var(--accent-color);
+    /* Orange */
+}
+
+.tag-attribute {
+    background-color: #6A5ACD;
+    /* SlateBlue */
 }
 
 .class-card h4 {
