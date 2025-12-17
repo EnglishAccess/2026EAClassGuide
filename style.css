@@ -402,6 +402,27 @@ footer p {
     background-color: #f9f9f9;
 }
 
+/* Explicit Grid Layouts for AAS */
+.image-grid.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image-grid.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 768px) {
+    .image-grid.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        /* 4 becomes 2 on tablet/mobile */
+    }
+
+    .image-grid.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 stays 2 */
+    }
+}
+
 /* Gamerize Section Styles */
 .gamerize-logo {
     display: block;
